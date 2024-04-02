@@ -3,39 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Joris vezba1</title>
 </head>
 <body>
-    
-    <label>Ocena:</label>
-    <input type="number">
-    <label>Datum izlaska na ispit:</label>
-    <input type="date">
+    <form action="">
+
+    <label for="ocena">Ocena:</label>
+    <input type="number" id="ocena" name="ocena">
+    <label for="datum">Datum izlaska na ispit:</label>
+    <input type="date" id="datum" name="datum">
     <br>
-    <label>Broj indeksa:</label>
-    <input type="text">
+
+    <label for="broj-indexa">Broj indeksa:</label>
+    <input type="text" id="broj-indeksa" name="broj-indeksa">
     <label>Rok:</label>
-    <input type="radio" value="Januar">
+    <input type="radio" id="januar" name="rok" value="Januar">
     <label>Januar</label>
-    <input type="radio" value="April">
+    <input type="radio" id="april" name="rok" value="April">
     <label>April</label>
-    <input type="radio" value="Jun">
+    <input type="radio" id="jun" name="rok" value="Jun">
     <label>Jun</label>
-    <input type="radio" value="Septembar">
+    <input type="radio" id="septmbar" name="rok" value="Septembar">
     <label>Septembar</label>
     <br>
-    <label>Redni broj izlaska na ispit:</label>
-    <select>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-    </select>
-    <input type="checkbox">
-    <label>Polozio/la:</label>
-    <br>
-    <button>Posalji</button>
-    
 
+    <label for="br-izlaska">Redni broj izlaska na ispit:</label>
+    <select name="br-izlaska-na-ispit" id="br-izlaska">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    <input type="checkbox" id="polozio" name="polozio">
+    <label for="polozio">Polozio/la:</label>
+    <br>
+
+    <button id="posalji">Posalji</button>
+    <br>
+    </form>
+
+
+    <label for="ispis">Podaci forme</label>
+    <textarea name="ispis" id="ispis" cols="30" rows="10" readonly></textarea>
+    <br>
+    <button id="ucitaj">Ucitaj</button>
+
+
+
+    <script src="index.js"></script>
 
 </body>
 </html>
